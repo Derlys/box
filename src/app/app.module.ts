@@ -5,10 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutWebModule } from '@kikstart-ui/layout-web';
 import { UiNavbarModule } from '@kikstart-ui/ui-navbar';
+import { UiHeroModule } from '@kikstart-ui/ui-hero';
+
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutWebModule, UiNavbarModule],
+  declarations: [AppComponent, HomeComponent, AboutComponent, ContactComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    LayoutWebModule,
+    UiNavbarModule,
+    UiHeroModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

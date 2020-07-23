@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UiBrand } from '@kikstart-ui/ui-brand';
+import { UiLink } from '@kikstart-ui/ui-link';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,9 @@ export class AppComponent {
     name: 'Site',
     logo: 'https://github.com/kikstart-ui.png',
   };
+  links: UiLink[] = [
+    { label: 'Home', path: '/' },
+    { label: 'About', path: '/about' },
+    { label: 'Contact', path: '/contact' },
+  ];
 }
