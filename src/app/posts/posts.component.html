@@ -1,0 +1,12 @@
+<div *ngIf="courses$ | async as posts">
+  <div *ngFor="let post of posts">
+    <img src="{{ post.author_img }}" />
+    <a [routerLink]="['/posts', post.id]">
+      <h2>{{ post.title }}</h2>
+    </a>
+
+    <h3>{{ post.description }}</h3>
+
+    <h4>{{ post.author_name }}</h4>
+  </div>
+</div>

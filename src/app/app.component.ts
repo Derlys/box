@@ -16,6 +16,7 @@ export class AppComponent {
   links: UiLink[] = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
+    { label: 'Blog', path: '/posts' },
     { label: 'Contact', path: '/contact' },
   ];
 }
